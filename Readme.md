@@ -26,6 +26,9 @@ This will start the embedded server
 ```sh
 $ ./swagger-mock -spec=spec.yml  -rule=rules.json -host=localhost:9000 -embedded=true
 ```
+## Download executables
+
+[Download](https://github.com/katakonst/swagger-mock/releases)
 
 # Config
 Example 
