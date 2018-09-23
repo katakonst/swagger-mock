@@ -3,7 +3,7 @@
 This tool generate a mock-server from a swagger spec
 
 # Perequisites
- - install golang
+ - Install Golang
  - Run `go get .` in swagger-mock directory
 
 # Build
