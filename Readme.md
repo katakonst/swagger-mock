@@ -2,17 +2,17 @@
 
 This tool generate a mock-server from a swagger spec
 
-#Perequisites
+# Perequisites
  - install golang
  - Run `go get .` in swagger-mock directory
 
-#Build
+# Build
 ```sh
 $ ./build.sh
 ```
 Will copy files to template folder and build swagger-mock executable
 
-#Usage
+# Usage
 
 #### Generate Go Sources
 
