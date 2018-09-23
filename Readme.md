@@ -51,6 +51,6 @@ Example
   ]
 }
 ```
-This will serve the response for a request for the path from createPets operation id if the request body is `{"id":"1"}`
+This will serve the response for a request for the path from createPets operation id if the request body is `{"id":"1"}`.
 In the repo exists a rule.json and a spec.yml for testing
 
