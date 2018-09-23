@@ -1,0 +1,17 @@
+package main
+import (
+    "log"
+    "net/http"
+    "github.com/gorilla/mux"
+)
+
+func main() {
+    router := mux.NewRouter()
+    logger := NewLogger("info")
+
+    {{range .Routes}}
+         router.HandleFunc("{{.Path}}", {{.OpId}}).Methods("{{.Method}}")
+    {{end}}
+    logger.Infof("Server started on {{.Host}}")
+    log.Fatal(http.ListenAndServe("{{.Host}}", router))
+}

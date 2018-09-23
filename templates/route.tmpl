@@ -1,0 +1,14 @@
+package main
+import (
+    "net/http"
+)
+
+func {{.OpId}} (w http.ResponseWriter, r *http.Request) {
+    logger := NewLogger("info")
+    s:= ParseRules("{{.RuleFile}}")
+    if err:=ProcessRule(w,r,s.Rules, "{{.OpId}}"); err!=nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        logger.Errorf("Error while processing opid: {{.OpId}}" )
+        return
+    }
+}

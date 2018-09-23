@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "opId": "createPets",
+      "method" : "POST",
+      "timeout": "10s",
+      "statusCode":201,
+      "args": [{
+        "argType": "JSON",
+        "body":{"id":"1"}
+      }],
+      "response": [
+        {
+          "id":"3",
+          "name": "4"
+        }
+      ]
+    },
+    {
+      "opId": "createPets",
+      "method" : "POST",
+      "timeout": "1s",
+      "statusCode":500,
+      "args": [{
+        "argType": "JSON",
+        "body":{"id":"4"}
+      }],
+      "response": [
+        {
+          "id":"3",
+          "name": "4"
+        }
+      ]
+    }
+  ]
+}
