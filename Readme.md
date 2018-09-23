@@ -15,14 +15,14 @@ Will copy files to template folder and build swagger-mock executable
 # Usage
 
 #### Generate Go Sources
+This will generate go sources in source folder
 
 ```sh
 $ ./swagger-mock -spec=test.yml -out=sources  -rule=rules.json -host=localhost:9000
 ```
 
-This will generate go sources in source folder
-
 #### Run Embedded server 
+This will start the embedded server
 ```sh
 $ ./swagger-mock -spec=spec.yml  -rule=rules.json -host=localhost:9000 -embedded=true
 ```
